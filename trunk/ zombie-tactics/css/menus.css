@@ -1,0 +1,133 @@
+
+/******************************** MENUS FLOTANTES ********************************/
+
+body{  cursor: default; }
+
+.menusGenerados{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-top: 1px solid #CCCCFF;
+  border-right: 1px solid #CCCCFF;
+  border-bottom: 1px solid #444488;
+  border-left: 1px solid #444488;
+  z-index: 100;/*esto es para que el borde blancop de los menus se vea*/
+}
+
+.cabeceramenu{
+  position: relative;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-bottom: 1px solid #444488;
+  background-color: #8888FF;
+  padding-left: 10px; padding-bottom: 2px; padding-top: 3px; padding-right: 10px;
+  z-index: 1000002;
+}
+.cabeceramenu div{
+  float: left;
+  padding-right: 5px;
+}
+.cabeceramenu span{ /*esto es para la x de cerrar*/
+  float: right;
+  padding-left: 5px; 
+}
+.cabeceramenu span:hover{/*esto es para la x de cerrar*/
+  text-shadow: -1px 0 #CCCCFF, 0 1px #CCCCFF, 1px 0 #CCCCFF, 0 -1px #CCCCFF;
+}
+
+.cuerpomenu{
+  font-family: monospace;
+  line-height: 1.5;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-left: 10px; padding-bottom: 2px; padding-top: 3px; padding-right: 10px;
+}
+.fondotransparentemenu{ /*fondo azul transparente de los menus*/
+  position:absolute; top:0px; left: 0px;
+  background-color: #8888FF;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  width: 100%; height: 100%;
+  z-index: 1000000;
+}
+.cuerpomenu form{
+  position: relative;
+  z-index: 1000002;
+  margin-bottom: 0px;
+  margin: 0px;
+}
+.cuerpomenu form input{ /*estilo de los botones-opciones del menu*/
+  color: #FFFFFF;
+  font-weight: bold;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  background-color: transparent;
+  padding-left: 5px; padding-right: 5px;
+  border:1px solid transparent;
+  width: 100%;
+  /*añadido hoy*/
+  font-family: monospace;
+    font-size: 0.9em;
+}
+.cuerpomenu form input:hover{ /*estilo HOVER de botones-opciones del menu*/
+  border:1px solid #FFFFFF;
+  text-shadow: -1px 0 #CCCCFF, 0 1px #CCCCFF, 1px 0 #CCCCFF, 0 -1px #CCCCFF;
+  width: 100%;
+}
+/*
+.opcionesMenuDesactivadas {
+    color: #FF0000;
+    border:1px solid #FF0000;
+    text-shadow: -1px 0 #FF0000, 0 1px #FF0000, 1px 0 #FF0000, 0 -1px #FF0000;
+}
+*/
+.opcionesMenu{
+	cursor:pointer;
+}
+.piemenu{
+  position: relative; 
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   border-top: 1px solid #CCCCFF;
+  background-color: #8888FF;
+  padding-left: 10px; padding-bottom: 2px; padding-top: 3px;
+  z-index: 1000003;
+}
+
+/********************************* FIN MENUS **********************************/
+
+.letrachica{ font-size: 0.8em ; }
+
+.transparente50{  opacity: .50; -moz-opacity: .50;  filter:alpha(opacity=50); }
+
+/*Estilo de los botones-opciones del menu de estado*/
+.submenuStatus{ 
+	font-family: monospace; font-weight: bold; color: white;  text-align: left; font-size: 100%;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border-top: 1px solid #CCF; border-right: 1px solid #CCF;
+	border-bottom: 1px solid #448; border-left: 1px solid #448;
+	background-color: transparent; padding-left: 5px; padding-right: 5px;
+	border:1px solid transparent;
+	cursor:default;
+	float:left;
+	
+}
+.submenuStatus:hover{
+
+	font-family: monospace; font-weight: bold; color: white;  text-align: left; font-size: 100%;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border-top: 1px solid #CCF; border-right: 1px solid #CCF; /* border: 1px solid rgb(0, 0, 0); */
+	border-bottom: 1px solid #448; border-left: 1px solid #448;
+	background-color: transparent; padding-left: 5px; padding-right: 5px;
+	border:1px solid transparent;
+}
+.submenuStatus input{ display: inline-block; width: 20px; }
+.submenuStatus input:hover{ display: inline-block; width: 20px; }
+.submenuStatus input.atributo{ color: yellow;  }
+.submenuStatus input.atributo:hover{ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; border:1px solid transparent; }
+
+.submenuStatus td{ color: white; }

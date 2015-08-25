@@ -1,0 +1,12 @@
+<?php
+
+	// Datos conexión a BBDD con permisos de sólo lectura
+	$servidorBBDD = '127.0.0.1'; // no se debe usar "localhost"
+	$nombreUsuarioBBDD = 'zt_user';
+	$passUsuarioBBDD = 'passUSER';
+	$nombreBBDD = 'zombietactics';
+	
+	// Establecemos la conexión
+	$mysqliUser = new mysqli($servidorBBDD, $nombreUsuarioBBDD, $passUsuarioBBDD, $nombreBBDD);
+	
+?>

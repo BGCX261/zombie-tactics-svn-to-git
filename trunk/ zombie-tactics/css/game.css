@@ -1,0 +1,21 @@
+
+line.rutaBloqueada{ stroke-width:8; stroke:#555555; fill:none; }
+line.rutaDesbloqueada{ stroke-width:8; stroke:#5555dd; fill:none; }
+
+div.skullDisabled{ width:73px; height:73px; background:url(../images/map_skulls.png) 0px 0px; }
+div.skullDisabled:hover{ width:73px; height:73px; background:url(../images/map_skulls.png) 0px -73px; }
+div.skullEnabled{ width:73px; height:73px; background:url(../images/map_skulls.png) -73px 0px; cursor: pointer; }
+div.skullEnabled:hover{ width:73px; height:73px; background:url(../images/map_skulls.png) -73px -73px; }
+div.skullFinished{ width:73px; height:73px; background:url(../images/map_skulls.png) -146px 0px; cursor: pointer; }
+div.skullFinished:hover{ width:73px; height:73px; background:url(../images/map_skulls.png) -146px -73px; }
+
+.mensajeMapaFlotante{
+	text-align:center; height:80px; width:150px; padding:10px; border: 1px black solid; background-color: #55f;
+	position: absolute; z-index: 1100;
+}
+.mensajeMapaFlotante input{ color:#ffffff; background-color: #44e; cursor: pointer; }
+.mensajeMapaFlotante input:hover{ color:#ffffff; background-color: #aaf; }
+
+body{
+	background-color:black;
+}
